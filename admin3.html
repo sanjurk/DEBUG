@@ -1,0 +1,104 @@
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://rendro.github.io/easy-pie-chart/javascripts/jquery.easy-pie-chart.js"></script>
+<link rel="stylesheet" href="admin.css">
+
+<div class="quiz-box-container">
+    <svg class="spin" viewBox="0 0 500 800">
+        <path class="spin1" />
+        <path class="spin2" />
+      </svg>
+      <svg class="leaves" viewBox="0 0 500 800">
+        <g opacity="0.5">
+          <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M424.297,72.299c-60.339,13.694-109.255,73.712-109.255,134.054
+            l109.478-24.848c60.341-13.695,109.257-73.713,109.257-134.054L424.297,72.299z"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M397.251,204.938C351.825,215.249,315,260.432,315,305.86
+            l39.609-8.99c45.427-10.31,82.253-55.494,82.253-100.921v-0.001L397.251,204.938z"/>
+        </g>
+      </svg>
+      <svg class="leaves" viewBox="0 0 500 800">
+        <g>
+          <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M370.277,162.982c-38.954,8.841-70.533,47.588-70.533,86.543
+            l70.677-16.041c38.955-8.841,70.535-47.588,70.535-86.543L370.277,162.982z"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M352.816,248.612c-29.326,6.656-53.1,35.826-53.1,65.153
+            l25.571-5.804c29.327-6.656,53.101-35.826,53.101-65.153v0L352.816,248.612z"/>
+        </g>
+      </svg>
+      
+    
+        
+            
+          
+            <div class="name-box">
+              <span>Enter Your Team Name</span>
+                </br>
+                <form id="name-form">
+                    <input type="text" id="name-input-box" />
+                    </br>
+                    <button type="submit" id="name-submit-button">Submit</button>
+                </form>
+  
+            </div>
+            <div class="wrapper">
+            <div id="question-box">
+              <div class="timer-div">
+                <img src="icons8-retro-alarm-clock-24.png" alt="Italian Trulli">
+                <span class="time-left"></span>
+            </div>
+              <div id="clock">
+    <span id="seconds">1815</span>
+    </div>
+            </div>
+            <div id="result">
+                <div class="score-label">
+                    <h1><i class="smiley"></i></h1>
+                </div>
+                <div>
+                    <div class="score-detail">
+                        <h3></h3>
+                    </div>
+                    <div class="chart">
+                        <div class="percentage" data-percent="100">
+                            <span></span><sup>%</sup>
+                        </div>
+                    </div>
+                    <h3 class="message"></h3>
+                </div>
+            </div>
+            <div id="result-stats">
+                <table>
+                    <tr>
+                        <th>Question</th>
+                        <th>You Selected</th>
+                        <th>Correct Answer</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        &nbsp;&nbsp;
+        <div class="navigation-buttons">
+          <button id="prevButton">Previous</button>
+            <button id="nextButton">Next question</button>
+            <button id="submitButton">IAM COMPLETED</button>
+            <div class="bg-gray-200 w-full h-full flex flex-row justify-center items-center">
+              
+              <style>
+                html, body {
+                  width: 80%;
+                  height: 100%;
+                }
+              </style>
+            </div>
+            
+          
+        </div> 
+    </div> 
+</div>
+</div>
+
+<script src="admin3.js"></script>
+<script>
+  window.onload = function() {
+  setQuestionOrder();
+  renderQuestion();
+}
+</script>
