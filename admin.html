@@ -1,5 +1,6 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://rendro.github.io/easy-pie-chart/javascripts/jquery.easy-pie-chart.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <link rel="stylesheet" href="admin.css">
 
 <div class="quiz-box-container">
@@ -29,7 +30,7 @@
             
           
             <div class="name-box">
-              <span>Your Team Name</span>
+              <span>Enter Your Team Name</span>
                 </br>
                 <form id="name-form">
                     <input type="text" id="name-input-box" />
@@ -74,10 +75,20 @@
                 </table>
             </div>
         </div>
+        &nbsp;&nbsp;
         <div class="navigation-buttons">
-            <button id="prevButton">Previous</button>
+          <button id="prevButton">Previous</button>
             <button id="nextButton">Next question</button>
             <button id="submitButton">IAM COMPLETED</button>
+            <div class="bg-gray-200 w-full h-full flex flex-row justify-center items-center">
+              
+              <style>
+                html, body {
+                  width: 80%;
+                  height: 100%;
+                }
+              </style>
+            </div>
             
           
         </div> 
@@ -86,3 +97,17 @@
 </div>
 
 <script src="admin.js"></script>
+<script>
+  window.onload = function() {
+  setQuestionOrder();
+  renderQuestion();
+}
+</script>
+
+<script>
+  $(function() {
+    setTimeout(function() { 
+      $("#nextButton").fadeOut(1500); }, 1815000)
+    
+    })
+</script>

@@ -181,6 +181,10 @@ button:disabled{
 display:none;
 }
 
+#nextButton{
+  background: lightgreen;
+}
+
 #name-submit-button {
 margin-top: 30px;
 }
