@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>HOVER</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="1.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            </head>
+    <body>   
+        <div class="container">
+            
+            <form>
+           <input type="text" id="input" placeholder="YOUR SLOT NUMBER">
+        </br>
+        <input type="button" value="submit"onclick="checkpswd()" id="button" class="confirm"/>
+        </form>
+           
+               </div>
+
+              
+            <script type="text/javascript">
+               function checkpswd() {
+    var password = document.getElementById("input").value;
+    if (password == 1) {
+        // Redirect to the corresponding admin.html, admin1.html, admin2.html, or admin3.html
+        window.location = "admin1.html";
+    }
+    else if (password == 2) {
+        window.location = "admin2.html";
+    }
+    else if (password == 3) {
+        window.location = "admin3.html";
+    }
+    else if (password == 4) {
+        window.location = "admin4.html";
+    }
+     else if (password == 5) {
+        window.location = "admin3.html";
+    }
+    else if (password == 6) {
+        window.location = "admin1.html";
+    }
+    else if (password == 7) {
+        window.location = "admin4.html";
+    }
+    else if (password == 8) {
+        window.location = "admin2.html";
+    }
+    else if (password == 9) {
+        window.location = "admin3.html";
+    }
+    else if (password == 10) {
+        window.location = "admin4.html";
+    }
+    else if (password == 11) {
+        window.location = "admin1.html";
+    }
+    else if (password == 12) {
+        window.location = "admin2.html";
+    } else {
+        alert("ENTER THE CORRECT SLOT NUMBER.");
+    }
+}
+                      </script>
+                </body>
+</html>
