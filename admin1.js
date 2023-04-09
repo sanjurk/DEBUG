@@ -241,7 +241,7 @@
                 message = '';
                 chartcolor = "red";
             }
-            $('.score-label h1').html('<small> </small>' + username + ', ' + 'You have Scored<i class="smiley"></i>');
+            $('.score-label h1').html('<small> </small>' + username + ', ' + 'You have Secured<i class="smiley"></i>');
             $('.message').text(message);
             $('.score-detail h3').text(scoremessage);
             $('.smiley').addClass(icon);
@@ -399,7 +399,7 @@
 
 })(jQuery);
 
-timeLeft = 1815;
+timeLeft = 20;
 
 function countdown() {
 	timeLeft--;

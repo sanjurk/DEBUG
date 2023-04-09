@@ -241,7 +241,7 @@
                 message = '';
                 chartcolor = "red";
             }
-            $('.score-label h1').html('<small> </small>' + username + ', ' + 'Your Score<i class="smiley"></i>');
+            $('.score-label h1').html('<small> </small>' + username + ', ' + 'Your Secured<i class="smiley"></i>');
             $('.message').text(message);
             $('.score-detail h3').text(scoremessage);
             $('.smiley').addClass(icon);
