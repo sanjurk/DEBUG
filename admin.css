@@ -131,7 +131,7 @@ padding: 0.7em 1.8em;
 }
 .navigation-buttons {
 text-align: center;
-padding: 10px 0px;
+padding: 150px 0px;
 float: right;
 }
 
@@ -165,6 +165,7 @@ border: none;
 width: 200px;
 height: 30px;
 margin-top: 200px;
+margin-left: 20px;
 text-align: center;
 border-radius: 0px 10px;
 background: lightgreen;

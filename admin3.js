@@ -3,124 +3,124 @@
     var username = '';
     var myColor;
     var all_questions = [{
-        question_string:("Find out the exact output?----------------------------------------mylist=[205,508,2670,120,301]----------------------------------output=[]----------------------------------------------------------------------for num in mylist:-----------------------------------------------------------num=str(num)-----------------------------------------------------------newlist=num.split('0')------------------------------------------------------output.append(int(' ' .join(newlist)))-----------------------------------print(output)"),
+        question_string: ("Identify what can directly access and change the value of the variable res.------------------------------------------------------------------package com.mypackage;------------------------------------------public class Solution {--------------------------------------------------private int res = 100; }"),
         choices: {
-            correct: "[25,58,267,12,31]",
-            wrong: ["[301,120,2670,508,205]", "[2,5,2,1,3]", "[5,8,0,0,1]"]
+            correct: "Only solution class",
+            wrong: ["Any class", "Any class that extends solution", "None"]
         }
     }, {
-        question_string: ("Find out the exact output?------------------------------------------mystr= 'a,a,a,a,b,b,c,c,c'--------------------------------------------------mylist=mystr.split(',')-------------------------------------------------------visited=[]----------------------------------------------------------final_list=[]-------------------------------------------------------------------for ch in mylist:--------------------------------------------------------------if ch not in visited:----------------------------------------------------------final_list.append(f'{ch}:{mylist.count(ch)}'}-----visited.apppend(ch)-----------------------------------------------print(final_list)--------------------------------------------------------------print(','.join(final_list))"),
+        question_string: ("When an array is passes to a method in java, what does the receive?"),
         choices: {
-            correct: "a:4,b:2,c:3",
-            wrong: ["4,2,3", "[a:4,b:2,c:3]", "a4,b2,c3"]
+            correct: "The reference of the array",
+            wrong: ["A copy of the array", "Length of the array", "Copy of first element"]
         }
     }, {
-        question_string: ("Find out the exact output?-------------------------------------mylist=[1,2,2,3,3,4,5,5,5,6,6]---------------------------------------new_list=[]--------------------------------------------------------------------for num in mylist:-----------------------------------------------------------if mylist.count(num)==1:-----------------------------------------new_list.append(num)-----------------------------------------print(nwe_list)"),
+        question_string: ("What is the Elvis operator in Kotlin?"),
         choices: {
-            correct: "[1,4]",
-            wrong: ["[0,0]", "[4,1]", "[1,2,3,4,5,6]"]
+            correct: ["An operator used to check for null values"],
+            wrong: ["A binary operator used to perform mathematical operations", "An operator used to compare two values", "An operator used to perform type conversion"]
         }
     }, {
-        question_string: ("Find out the exact output?----------------------------------------str1=:'Sky is blue'------------------------------------------------mylist=str1.split()------------------------------------------mylist=mylist[::-1]----------------------------------------------str2=''.join(mylist)------------------------------------------------print(str2)"),
+        question_string: ("fun main() {----------------------------------------------------------------val myString: String ?= 'length';----------------------------------------val length = myString.length }"),
         choices: {
-            correct: "blue is Sky",
-            wrong: ["sky is blue", "Sky is blue", "blue is sky"]
+            correct: "shows error",
+            wrong: ["4", "6", "compile with out error"]
         }
     }, {
-        question_string: ("Find out the exact output?--------------------------------------------x=['a','b','c','d']--------------------------------------------------------------for x[-1] in x:-----------------------------------------------------------------print(x[-1], end='')"),
+        question_string: ("fun main() {-------------------------------------------------------------val myString = 'Hello'----------------------------------------------------val result = myString.take(2).map {it.uppercase()}------------------println(result) }"),
         choices: {
-            correct: "abcc",
-            wrong: ["abcd", "abc", "dcba"]
+            correct: "['H', 'E']",
+            wrong: ["['H', 'e']", "['H', 'E', 'L', 'L', 'O']", "None of the above"]
         }
     }, {
-        question_string: ("Find out the exact output?---------------------------------------------def append(ele, to=[]):----------------------------------------------------to.append(ele)-----------------------------------------------------------return to------------------------------------------------------------------list_one = append(56)-------------------------------------------------------print(list_one, end=''-------------------------------------------------------list_two = append(23)----------------------------------------------------print(list_two)"),
+        question_string: ("fun main() {--------------------------------------------------------------val num = 15--------------------------------------------------------------when (num) {--------------------------------------------------------------_10 -> println('Ten')-----------------------------------------------------_15 -> println('Twenty')--------------------------------------------------_20 -> println('Fifteen')--------------------------------------------------else -> println('Other') } }"),
         choices: {
-            correct: "[56][56,23]",
-            wrong: ["[56][23]", "[56][23,56]", "Error"]
+            correct: "Twenty",
+            wrong: ["Ten", "Fifteen", "Other"]
         }
     }, {
-        question_string: ("Find out the exact output?---------------------------------------------var = {10,20,10,10,30,30,20}-----------------------------------------------print(len(var))"),
+        question_string: ("What is the output of the following code?--------------------------a = [1, 2, 3, 4, 5]-------------------------------------------------------------b = a[::-1]---------------------------------------------------------------------c = [a[i] + b[i] for i in range(len(a))]-------------------------------------print(c)"),
         choices: {
-            correct: "3",
-            wrong: ["2", "10,20,30", "7"]
+            correct: "[6, 6, 6, 6, 6]",
+            wrong: ["[5, 5, 5, 5, 5]", "[1, 3, 5, 7, 9]", "9, 7, 5, 3, 1"]
         }
     }, {
-        question_string: ("Find out the exact output?------------------------------------------var = 2e3--------------------------------------------------------print(type(var))"),
+        question_string: ("What is a generation in Python?"),
         choices: {
-            correct: "[class 'float']",
-            wrong: ["[class 'exponential']", "[class 'double']", "[class 'long']"]
+            correct: "A function that returns an iterable sequence of results",
+            wrong: ["A built-in Python class for creating generators", "A module for generating ranfom numbers", "A data type for storing large amounts of data"]
         }
     }, {
-        question_string: ("Find out the exact output?---------------------------------------------list1 = ['xyz', 222]------------------------------------------------------------for i in list1:---------------------------------------------------------list1.append(i)-----------------------------------------------------print(i,end='')"),
+        question_string: ("What is the diference between a shallow copy and a deep copy in Python?"),
         choices: {
-            correct: "infinite loop",
-            wrong: ["terminate itself", "['xyz']", "['xyz','222']"]
+            correct: "A shallow copy creates a new object with a reference to the original object, while a deep copy creates a new object with a copy of the original object's data",
+            wrong: ["A shallow copy creates a new object with a copy of the original object's while a deep copy creates a new object with a reference to the original object", "A shallow copy only copies the first level of the original object, while a deep copy copies all levels of the original object", "A shallow copy only copies the last level of the original object, while a deep copy copiesall levels of the original object"]
         }
     }, {
-        question_string: ("Find out the exact output?-------------------------------------------deffunc(val1,val2=2,val3=7,val4=2):----------------------------------return val1**val2**val3--------------------------------------------------print(func(val2=2,val1=2,val3=4))"),
+        question_string:("What is the output of the following code?--------------------------x = 5----------------------------------------------------------------------------if x > 2:----------------------------------------------------------------------print('Hello')-----------------------------------------------------------else:-----------------------------------------------------------print('Goodbye')"),
         choices: {
-            correct: "65536",
-            wrong: ["65538", "65784", "64536"]
+            correct: "None of the above",
+            wrong: ["Goodbye", "lo", "Hello"]
         }
     }, {
-        question_string:("Find out the exact output?----------------------------------------public class Main------------------------------------------------------------{---------------------------------------------------------------------------------public static void main(String[] args)-----------------------------------{---------------------------------------------------------------------------------double data = 444.3245-----------------------------------------------------int value = data;-----------------------------------System.out.println(data);------------------------------}-------------}"),
+        question_string:("What will be the output of the following java program?-------public class leftshift_operator {-------------------------------------public static void main(String[] args) {---------------------------------byte x = 64;-------------------------------------------------------------------int i;----------------------------------------------------------------------------byte y;-------------------------------------------------------------------------i = x << 2;-------------------------------------------------------System.out.println(i + ' ' + y); } }"),
         choices: {
-            correct: "Error",
-            wrong: ["444", "444.3245", "nothing"]
+            correct: "256 0",
+            wrong: ["0 256", "0 64", "64 0"]
         }
     }, {
-        question_string: ("Find out the exact output?------------------------------------------public class Main'-----------------------------------------------------------{---------------------------------------------------------------------------------public static void main(String args[])-----------------------------------{-------------------------------------------------------------------System.out.println(fun());------------------------------------------------}--------------------------------------------------------------------------------int fun()-----{-----------------------------------------------------------------return 20;----------------------------------------------------------------}"),
+        question_string: ("Exception thrown in a try-with-resources block, after an exception has already been thrown in the try block, are accessible as:"),
         choices: {
-            correct: "Error",
-            wrong: ["20", "nothing", "runtime error"]
+            correct: "SuppressedExceptions",
+            wrong: ["ResourceExceptions", "HiddenExceptions", "ClosableExceptions"]
         }
     }, {
-        question_string: ("Find out the exact output?----------------------------------------public class A-----------------------------------------------------------------{-----------------------------------------------------------------------------public static void main(String[] args)-----------------------------------{--------------------------------------------------------------------------------if (true)------------------------------------------------------------------------break;-----------------------------}----------------------------}"),
+        question_string: ("What is a foreign key in SQL?"),
         choices: {
-            correct: "Error",
-            wrong: ["nothing", "runtime error", "incomplete code"]
+            correct: "A key that links two tables together",
+            wrong: ["A key that is used to encrypt sensitive data", "A key that allows for efficient searching of data", "A key is used for authentication purposes"]
         }
     }, {
-        question_string: ("Find out the exact output?----------------------------------------public class A---------------------------------------------------------------{----------------------------------------------------------------------------public static void main(string[] args)-----------------------------------{------------------------------------------------System.out.println('j'+'a'+'v'+;a');---------------------}--------}"),
+        question_string: ("Which SQL statement is used to modify existing data in a table?"),
         choices: {
-            correct: "418",
-            wrong: ["java", "nothing", "j a v a"]
+            correct: "UPDATE",
+            wrong: ["ALTER", "MODIFY", "CHANGE"]
         }
     }, {
-        question_string: ("Find out the exact output?--------------------------------------------public class A----------------------------------------------------------------{---------------------------------------------------------------------------------public static void main(String[] args)-----------------------------------{------------------------------------------------------------------------------int $_ = 10;--------------------}---------------------------}"),
+        question_string: ("Which of the following SQL commands is used to retrieve a distinct set of values from a table?"),
         choices: {
-            correct: "10",
-            wrong: ["error", "nothing", "runtime error"]
+            correct: "SELECT DISTINCT",
+            wrong: ["SELECT UNIQUE", "SELECT DIFFERENT", "SELECT UNIQUE VALUES"]
         }
     }, {
-        question_string: ("Find out the exact output?---------------------------------------------public class A-----------------------------------------------------------------{---------------------------------------------------------------------------------public static void main(String[] args)----------------------------------{------------------------------------}-------------------------------------------public static void main(String[] args)-----------------------------------{------------------------------------}-----------------------------}"),
+        question_string: ("Which of the following SQL functions is used to return the current date and time?"),
         choices: {
-            correct: "nothing",
-            wrong: ["error", "incomplete code", "runtime error"]
+            correct: "ALL THE ABOVE",
+            wrong: ["NOW()", "CURRENT_DATE()", "CURRENT_TIME()"]
         }
     }, {
-        question_string: ("Find out the exact output?---------------------------------------------public class A-----------------------------------------------------------------public static void main(String[] args){--------------------------------int i=1, j=0;-------------------------------------------------------------------switch(i)-------------------------------------{----------------------------case2:---------------------------------------j+=6;--------------------------System.out.println('j=' +j);-----------------------------------------------case4:---------------------------------------j+=1;--------------------------System.out.println('j=' +j);-----------------------------------------------default:-------------------------------------j+=2;--------------------------System.out.println('j=' +j);----------------------------------------------case0:---------------------------------------j+=4;--------------------------System.out.println('j=' +j);----------------------------------------------}---------------------------------}"),
+        question_string: ("What is the output of the following PHP code?------------------<?php--------------------------------------------------------------------_$num = 1;--------------------------------------------------------------while ($num <= 5) {--------------------------------------------------------echo $num;-------------------------------------------------------_$num++; } ?>"),
         choices: {
-            correct: "j=2, j=6",
-            wrong: ["j=6, j=1", "j=6,1", "j=6, j=2"]
+            correct: "1 2 3 4 5 ",
+            wrong: ["12345", "An infinity loop", "None of the above"]
         }
     }, {
-        question_string: ("Find out the exact output?------------------------------------------public class A-----------------------------------------------------------------public static void main(String[] args){----------------------------------Integer num1 = 100;------------------------------------------------Integer num2 = 100;-------------------------------------------------Integer num3 = 500;------------------------------------------------Integer num4 = 500;-------------------------------------------------if(num1==num2){-------------------------------------System.out.println('num1==num2')--------------------}---------------else{------------------------------------------------------------------System.out.println('num1!=num2');---------------------------}--------if(num3==num4){------------------System.out.println('num3==num4');-----------------}-----------------else{-------------------------------------------------------------System.out.println('num3!=num4');-------}------}------------} "),
+        question_string: ("What does AJAX stands for?"),
         choices: {
-            correct: "num1==num2, num3!=num4",
-            wrong: ["num1==num2, num3==num4", "num1!=num2, num3!=num4", "num1!=num2, num3==num4"]
+            correct: "Asynchronous JavaScript and XML",
+            wrong: ["Advanced JavaScript and XHTML", "Asynchronous JavaScript and XHTML", "Advanced JavaScript and XML"]
         }
     }, {
-        question_string: ("Find out the exact output?---------------------------------------------class A---------------------------------{---------------------------------------private final void flipper()----------------------------{-------------------System.out.println('Clidder');-------------}---------------}-------------public class B extends A-----------------------{--------------------------public final void flipper()---------------------{----------------------System.out.println('Clident')----------------------}----------------------public static void main(String[] args)------------------------{----------new B().flipper();---------------------}--------------------}"),
+        question_string: ("what is the output of the following PHP code?-------------------<?php-------------------------------------------------------------------------_$str = 'Hello World!';----------------------------------------------------echo str_replace('World','PHP',$str); ?>"),
         choices: {
-            correct: "Clidlet",
-            wrong: ["Clidder", "compliation error", "none of these"]
+            correct: "Hello PHP!",
+            wrong: ["World PHP!", "PHP World!", "Error"]
         }
     }, {
-        question_string: ("Find out the exact output?-------------------------------------------public class A implements Runnable-------------------------{----------public void run()----------------------------{----------------------System.out.println('GFG');-------------------------------}---------------public static void main(String[] args) throws InterruptedException----------------------{-------------------------Thread thread1 = new Thread(new A());----------------------------thread1.start();-------------------------------------------------thread1.start();-----------------------System.out.println(thread1.getState());--------}----------}"),
+        question_string: ("Which of the following is the correct way to read a file in PHP?"),
         choices: {
-            correct: "runtime error",
-            wrong: ["GFG GFG TERMINATED", "GFG TERMINATED", "Compilation error"]
+            correct: "$content = fopen('filename.txt','r');",
+            wrong: ["$content = file_open('filename.txt','r');", "$content = file('filename.txt','r');", "$content = readfile('filename.txt','r');"]
         }
     }];
 
@@ -215,7 +215,7 @@
             // Display the score with the appropriate message
             var percentage = (score / self.questions.length);
 
-            var scoremessage = score + " Out of " + self.questions.length + " questions were correct.";
+            var scoremessage = " You have answered " + score + " Out of " + self.questions.length + " Questions...!";
             var icon = '';
             var chartcolor = '';
             console.log(percentage);
@@ -241,7 +241,7 @@
                 message = 'Maybe you should try a little harder.';
                 chartcolor = "red";
             }
-            $('.score-label h1').html('<small>Hi </small>' + username + ', ' + 'Your Score<i class="smiley"></i>');
+            $('.score-label h1').html('<small> </small>' + username + ', ' + 'You have Scored<i class="smiley"></i>');
             $('.message').text(message);
             $('.score-detail h3').text(scoremessage);
             $('.smiley').addClass(icon);
